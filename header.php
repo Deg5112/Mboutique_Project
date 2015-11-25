@@ -10,10 +10,11 @@
     <div class="collapse navbar-collapse" id="myNavbar">
         <div class="container-fluid">
             <ul class="nav navbar-right navbar-nav">
-                <li><a href="">Welcome</a></li>
-                <li><a href="">Our Macarons</a></li>
-                <li><a href="">Gifts & Parties</a></li>
-                <li><a href="">Contact</a></li>
+                <?php
+                include('dynamicMenu.php');
+                makeNav();
+
+                ?>
                 <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">Languages
                         <span class="caret"></span></a>

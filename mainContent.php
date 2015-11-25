@@ -7,9 +7,11 @@ $mainContentArray = [
     'Contact'=> 'contact.php' ,
 ];
 
-$mainContentUrl = $mainContentArray['Gifts & Parties'];
+$mainContentUrl = $mainContentArray['welcome'];
 
-print(include($mainContentUrl));
+include($mainContentUrl);
+
+
 
 
 ?>
