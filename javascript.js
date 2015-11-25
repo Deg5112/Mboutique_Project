@@ -26,6 +26,18 @@ $(function(){
         });
         i+=1;
     }, 5000);
+
+    $('.nav li a').click(function(){
+        var anchorText = $('.nav li a').text();
+        console.log(anchorText);
+        console.log('hello');
+        //$.ajax({
+        //   method: 'post',
+        //    dataType: 'json',
+        //    data: {},
+        //    url: 'http://localhost:8888/lfz/mboutique/mainContent.php'
+        //});
+    });
 });
 
 

@@ -17,7 +17,11 @@
     <!--jquery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <?php
+
+    include("checkdate.php");
+    ?>
+
     <script type="text/javascript">
         function googleTranslateElementInit() {
             new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
@@ -26,44 +30,14 @@
     <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </head>
 <body>
+
 <div id="google_translate_element" class="navbar"></div>
 <!--header-->
 <header>
-        <nav class="navbar navbar-default">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <img class="navbar-brand" src="assets/images/logo.png">
-                </div>
-                <div class="collapse navbar-collapse" id="myNavbar">
-                    <div class="container-fluid">
-                        <ul class="nav navbar-right navbar-nav">
-                            <li><a href="index.html">Welcome</a></li>
-                            <li><a href="macarons.html">Our Macarons</a></li>
-                            <li><a href="gifts.html">Gifts & Parties</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                            <li class="dropdown">
-                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Languages
-                                    <span class="caret"></span></a>
-                                <ul class="dropdown-menu">
-                                    <li data-lang='Spanish' class="language"><a  href="#"><img src="http://vignette4.wikia.nocookie.net/althistory/images/9/92/Flag_of_Spain_(1785-1873_and_1875-1931).png/revision/latest?cb=20110924012245"></a></li>
-                                    <li data-lang='French' class="language"><a  href="#"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c3/Flag_of_France.svg/1280px-Flag_of_France.svg.png"></a></li>
-                                    <li data-lang='Japanese' class="language"><a href="#"><img src="https://upload.wikimedia.org/wikipedia/en/c/c1/Flag_of_Japan_(bordered).PNG"></a></li>
-                                    <li data-lang='English' class="language"><a href="#"><img src="http://www.quincyjones.com/wp-content/uploads/2014/03/uk_flag.png"></a></li>
-
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-        </nav>
+    <?php
+    include('header.php');
+    ?>
 </header>
-
-
-
 
 <!--jumbo-->
     <div id ='jumbo-wrapper'>
@@ -73,46 +47,9 @@
 <div class="container">
 <!--main-->
     <main class="main"><!--main begin-->
-        <div class="row">
-
-                <div class=" hidden-xs col-sm-4 col-sm-push-8 col-md-push-0 text-center img-section">
-                    <div class="container-fluid">
-                        <img src="assets/images/macarons-image.png"><!--main image-->
-                    </div>
-                </div>
-
-                <section class="col-sm-8 col-sm-pull-4 col-md-pull-0  main-content"><!--section begin-->
-                    <div class="container-fluid">
-                        <div class="row">
-
-                            <div class="page-header "><!--first header-->
-                                <h1>Welcome to MBoutique!</h1>
-                            </div>
-                            <p>We're a home-based baking business that specialized in the making of French macarons, a gluten-free
-                                pastry item made from ground almonds. Our business began at the West Reading Farmers Market in 2011.
-                                Last year (2013) marked our third and final season of participation at the market. MBoutique was established
-                                to pay homage to the delicate French confectionery, the macaron, Our shop has been recognized as the
-                                connoisseurs of this delicious French pastry because fo the wonderful variety of flavors from our great
-                                master chefs.
-                            </p>
-
-                            <div><!--second header-->
-                                <h2>We love Macarons!</h2>
-                            </div>
-                            <p>Renowned macarons, French delights of the moment can be met in a variety of flavors and colors and are
-                                brilliant precisely because fo their simplicity - a crispy coating, but delicate in a loose blanket jam,
-                                chocolate butter cream is spread inviting.</p>
-
-                            <p>Macarons combines perfectly with champagne or white wine, tea or hot chocolate, fresh juices and natural
-                                fruit flavored coffee and guarantee that these little delights soon become friend that you can not break.</p>
-
-                            <div ><!--third header-->
-                                <h2>Find the flavor that you like. Try a sample every day</h2>
-                            </div>
-                        </div>
-                    </div>
-                </section><!--section end-->
-            </div>
+        <?php
+        include('mainContent.php');
+        ?>
 
     </main>
 <!--main end-->
@@ -196,23 +133,9 @@
 
 <!--footer-->
 <footer class="">
-    <div class="row text-center">
-
-        <div class="col-sm-4 footer-div">
-            <img src="assets/images/mail.png"> Order@mboutique.com
-        </div>
-
-        <div class="col-sm-4 footer-div">
-
-            <img src="assets/images/phone.png"> 949.800-3111 <br>
-
-            <p>Copyright &copy 2014 MBoutique. All rights reserved</p>
-        </div>
-
-        <div class=" col-sm-4 footer-div">
-            Follow us <img src="assets/images/facebook.png"><img src="assets/images/twitter.png">
-        </div>
-    </div><!--row end-->
+    <?php
+    include('footer.php');
+    ?>
 </footer>
 <script src="javascript.js"></script>
 
