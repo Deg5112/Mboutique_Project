@@ -4,12 +4,14 @@ function makeNav(){
         'welcome' => ['text'=>'Welcome', 'url'=>'welcome.php'],
         'Our Macarons' => ['text'=> 'Our Macarons', 'url'=>'macarons.php'],
         'Gifts & Parties' => ['text'=>'Gifts & Parties', 'url' => 'gifts.php'],
-        'Contact' => ['text' => 'contact.php', 'url' => 'contact.php'],
+        'Contact' => ['text' => 'Contact', 'url' => 'contact.php'],
     ];
-    foreach($arr as $value){
-        print("<li><a href='{$value['url']}'>{$value['text']}</a></li>");
+    foreach($arr as $k=>$v){
+        $address = '?url='.$v['url'];
+        print("<li><a href=$address>".$v['text']."</a></li>");
     }
 }
+
 
 ?>
 

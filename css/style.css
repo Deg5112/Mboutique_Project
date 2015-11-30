@@ -24,6 +24,18 @@ div#google_translate_element {
 .navbar-nav>li>.dropdown-menu {
     background-color: #fffabe !important;
 }
+.navbar-nav>li {
+    font-size: 16px;
+}
+
+.navbar-default .navbar-brand {
+    color: #777;
+    width: 8.3em;
+    height: 3em;
+}
+
+
+
 
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.open>a {
     background-image: -webkit-linear-gradient(top,#fffabe 0,#fffabe 100%);
@@ -88,7 +100,7 @@ nav>.container, .navbar-default .navbar-collapse, .navbar-default, .navbar-heade
 .img-section{
     font-size: 14px;
 }
-p{
+p, address, li{
     font-size: 14px;
     color: #6a6969;
     line-height: 1.4em;
@@ -161,6 +173,7 @@ footer{
     margin-bottom: 0 !important;
     color: white;
     border-radius: 5px;
+    margin-top: 3%;
 }
 div.row.text-center {
     padding: 2% !important;
@@ -172,7 +185,7 @@ footer p{
 
 div.tower{
     background-image: url('assets/images/gifts-parties-background.png');
-    background-position: 57% 116%;
+    background-position: 57% 113%;
     background-repeat: no-repeat;
 }
 
