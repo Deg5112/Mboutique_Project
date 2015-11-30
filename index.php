@@ -1,3 +1,17 @@
+<?php
+require_once('settings.php');
+if(!empty($_GET['page'])){
+    if(isset($linkArray[$_GET['page']]['url'])){
+        $page = $linkArray[$_GET['page']]['url'];
+    }else{
+        $page = $linkArray['welcome']['url'];
+    }
+
+}else{
+    $page = $linkArray['welcome']['url'];
+}
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -48,13 +62,7 @@
 <!--main-->
     <main class="main"><!--main begin-->
         <?php
-        if(isset($_GET['url'])){
-            $page = $_GET['url'];
             include($page);
-        }else{
-            include('welcome.php');
-        }
-
         ?>
 
     </main>

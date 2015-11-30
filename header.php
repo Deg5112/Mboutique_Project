@@ -1,3 +1,7 @@
+<?php
+require_once('settings.php');
+require_once('dynamicMenu.php');
+?>
 <nav class="navbar navbar-default">
     <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -11,9 +15,7 @@
         <div class="container-fluid">
             <ul class="nav navbar-right navbar-nav">
                 <?php
-                include('dynamicMenu.php');
-                makeNav();
-
+                makeNav($linkArray);
                 ?>
                 <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">Languages

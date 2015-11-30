@@ -1,17 +1,12 @@
 <?php
-function makeNav(){
-    $arr = [
-        'welcome' => ['text'=>'Welcome', 'url'=>'welcome.php'],
-        'Our Macarons' => ['text'=> 'Our Macarons', 'url'=>'macarons.php'],
-        'Gifts & Parties' => ['text'=>'Gifts & Parties', 'url' => 'gifts.php'],
-        'Contact' => ['text' => 'Contact', 'url' => 'contact.php'],
-    ];
-    foreach($arr as $k=>$v){
-        $address = '?url='.$v['url'];
-        print("<li><a href=$address>".$v['text']."</a></li>");
+require_once('settings.php');
+
+function makeNav($array){
+    foreach($array as $k=>$v){
+        $address = '?page='.$k;
+        print("<li><a href= '$address' >" . $v['text']. "</a></li>");
     }
 }
-
 
 ?>
 
