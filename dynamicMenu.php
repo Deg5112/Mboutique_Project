@@ -7,7 +7,6 @@ function makeNav($array){
         print("<li><a href= '$address' >" . $v['text']. "</a></li>");
     }
 }
-
 ?>
 
 

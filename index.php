@@ -10,6 +10,7 @@ if(!empty($_GET['page'])){
 }else{
     $page = $linkArray['welcome']['url'];
 }
+
 ?>
 
 <!DOCTYPE html>
