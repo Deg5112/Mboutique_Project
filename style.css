@@ -11,9 +11,9 @@ body{
 }
 
 
-.welcome-jumbotron{
-    background-image: url('assets/images/welcome-image.png');
-}
+/*.welcome-jumbotron{*/
+    /*background-image: url('assets/images/welcome-image.png');*/
+/*}*/
 
 div#google_translate_element {
    display: none;
@@ -176,15 +176,15 @@ div.tower{
     background-repeat: no-repeat;
 }
 
-.jumbotron-gifts{
-    background-image: url("assets/images/gifts-parties-image.png");
-}
-.macaron-jumbotron{
-    background-image: url("assets/images/our-macarons-image.png");
-    height:400px;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+/*.jumbotron-gifts{*/
+    /*background-image: url("assets/images/gifts-parties-image.png");*/
+/*}*/
+/*.macaron-jumbotron{*/
+    /*background-image: url("assets/images/our-macarons-image.png");*/
+    /*height:400px;*/
+    /*background-repeat: no-repeat;*/
+    /*background-size: cover;*/
+/*}*/
 
 .macarons-main-img{
     background-image: url("assets/images/our-macarons-background.png");
@@ -209,7 +209,7 @@ main.main-contact {
     color: #df5277;
 }
 
-.jumbotron-contact{
-    background-image: url('assets/images/contact-image.png');
-}
+/*.jumbotron-contact{*/
+    /*background-image: url('assets/images/contact-image.png');*/
+/*}*/
 

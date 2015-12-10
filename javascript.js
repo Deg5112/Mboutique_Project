@@ -27,31 +27,12 @@ $(function(){
         i+=1;
     }, 5000);
 
-    var app = angular.module('myApp', ['ng-route']);
-    app.config(function($routeProvider){
-        $routeProvider
-            .when('/', {
-                templateUrl: 'htmlforIndex.html',
-                controller: 'mainController'
-            })
-            .when('/macarons',{
-                templateUrl: 'macarons.html',
-                controller: 'macaronsController'
-            })
-            .when('/gifts', {
-                templateUrl: 'gifts.html',
-                controller: 'giftsController'
-            })
-            .when('/contact',{
-                templateUrl: 'contact.html',
-                controller: 'contactController'
-            });
-    });
-    //TODO shouldn't this work??
-    //app.controller('mainController', function(){
-    //    backgroundUrl = 'assets/images/welcome-image.png'
-    //});
 
+ if(typeof angular !== 'undefined'){
+     console.log('installed');
+ }else{
+     console.log('not installed');
+ }
 
 });
 
