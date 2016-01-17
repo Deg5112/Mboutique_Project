@@ -10,6 +10,12 @@ body{
     display: none !important;
 }
 
+nav.navbar.navbar-default {
+    background-image: none !important;
+}
+nav {
+    background-color: #fffabe !important;
+}
 
 .welcome-jumbotron{
     background-image: url('assets/images/welcome-image.png');
